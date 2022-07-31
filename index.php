@@ -70,7 +70,7 @@
 
     <div class="container py-5" id="Add-Burgers">
       <div class="h3">Add Burgers</div>
-      <form>
+      <form action="./add_burger.php" method="POST">
         <label for="burgerNameInput" class="form-label">Burger Name</label>
         <input type="text" class="form-control" id="burgerNameInput" name="burger-name" required />
         <br />
