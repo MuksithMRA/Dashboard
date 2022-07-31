@@ -41,6 +41,11 @@
                 >Add Burgers</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Burger-Availability"
+                >Update Availability</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -84,8 +89,8 @@
               </p>
             </div>
             <div class="card-footer">
-                <button class="btn btn-Danger">Delete</button>
-              </div>
+              <button class="btn btn-Danger">Delete</button>
+            </div>
           </div>
         </div>
         <div class="col-lg-3 p-3">
@@ -100,8 +105,8 @@
               </p>
             </div>
             <div class="card-footer">
-                <button class="btn btn-Danger">Delete</button>
-              </div>
+              <button class="btn btn-Danger">Delete</button>
+            </div>
           </div>
         </div>
         <div class="col-lg-3 p-3">
@@ -116,8 +121,8 @@
               </p>
             </div>
             <div class="card-footer">
-                <button class="btn btn-Danger">Delete</button>
-              </div>
+              <button class="btn btn-Danger">Delete</button>
+            </div>
           </div>
         </div>
         <div class="col-lg-3 p-3">
@@ -132,26 +137,34 @@
               </p>
             </div>
             <div class="card-footer">
-                <button class="btn btn-Danger">Delete</button>
-              </div>
+              <button class="btn btn-Danger">Delete</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container py-5" id="Add-Burgers">
-      <div class="h3">Add/Update Burgers</div>
+      <div class="h3">Add Burgers</div>
       <form>
-        <label for="burgerIDInput" class="form-label">Burger ID</label>
-        <input type="text" class="form-control" id="burgerIDInput" required />
-        <br />
-
         <label for="burgerNameInput" class="form-label">Burger Name</label>
         <input type="text" class="form-control" id="burgerNameInput" required />
         <br />
 
-        <label for="burgerDescInput" class="form-label">Burger Desciption</label>
+        <label for="burgerDescInput" class="form-label"
+          >Burger Desciption</label
+        >
         <input type="text" class="form-control" id="burgerDescInput" required />
+        <br />
+
+        <button class="btn btn-primary" type="submit">Add Burger</button>
+      </form>
+    </div>
+    <div class="container py-5" id="Burger-Availability">
+      <div class="h3">Update Availability</div>
+      <form action="">
+        <label for="burgerIDInput" class="form-label">Burger ID</label>
+        <input type="text" class="form-control" id="burgerIDInput" required />
         <br />
 
         <p>Availability</p>
@@ -174,11 +187,9 @@
           <label class="form-check-label" for="flexRadioDefault1"> No </label>
         </div>
         <br />
-
-
-        <button class="btn btn-primary" type="submit">Add Burger</button>
-        <button class="btn btn-primary" type="submit">Update Burger</button>
-        
+        <button class="btn btn-primary" type="submit">
+          Update Burger Availability
+        </button>
       </form>
     </div>
   </body>
