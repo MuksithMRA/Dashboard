@@ -18,6 +18,7 @@ if (isset($_POST["burger-name"])) {
 
     if ($result > 0) {
         echo "Burger Added Successfully";
+        header("Location: /index.php");
     } else {
         echo "Buger Adding Error";
     }

@@ -86,7 +86,7 @@
     </div>
     <div class="container py-5" id="Burger-Availability">
       <div class="h3">Update Availability</div>
-      <form action="">
+      <form action="./update_availability.php" method="POST">
         <label for="burgerIDInput" class="form-label">Burger ID</label>
         <input type="text" class="form-control" name="burger-id" id="burgerIDInput" required />
         <br />
@@ -97,7 +97,7 @@
             class="form-check-input"
             type="radio"
             name="isAvailable"
-            id="flexRadioDefault1"
+            value=1
           />
           <label class="form-check-label" for="flexRadioDefault1"> Yes </label>
         </div>
@@ -106,7 +106,7 @@
             class="form-check-input"
             type="radio"
             name="isAvailable"
-            id="flexRadioDefault1"
+           value=0
           />
           <label class="form-check-label" for="flexRadioDefault1"> No </label>
         </div>

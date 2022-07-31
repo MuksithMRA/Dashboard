@@ -15,6 +15,7 @@ $result = $conn->query($sql);
 
 if($result>0){
     echo "Deleted Successfully";
+    header("Location: /index.php");
 }else{
     echo "Deletation Error";
 }
